@@ -14,7 +14,7 @@ def format_record(rec: tuple[str, str, float]) -> str:
     
     group = rec[1].strip()
     if group == '': 
-        return ValueError
+        return ValueError 
 
     if type(rec[2]) != float and type(rec[2]) != int:
         return 'TypeError'

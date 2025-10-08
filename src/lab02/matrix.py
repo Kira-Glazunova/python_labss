@@ -11,12 +11,6 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
             new_matrix[y][x] = mat[x][y]
     return new_matrix
 
-print(transpose([[1, 2, 3]]))
-print(transpose([[1], [2], [3]]))
-print(transpose([[1, 2], [3, 4]]))
-print(transpose([]))
-print(transpose([[1, 2], [3]]))
-
 
 def row_sums(mat: list[list[float | int]]) -> list[float]:
     if any(len(mat[0]) != len(mat[i]) for i in range(len(mat))):
@@ -29,11 +23,6 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
     for arr in range(len(mat)):
         summa.append(sum(mat[arr]))
     return summa
-
-print(row_sums([[1, 2, 3], [4, 5, 6]]))
-print(row_sums([[-1, 1], [10, -10]]))
-print(row_sums([[0, 0], [0, 0]]))
-print(row_sums([[1, 2], [3]]))
 
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
@@ -49,10 +38,3 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
             summa[y] += (mat[x][y])
     return summa
 
-print(col_sums([[1, 2, 3], [4, 5, 6]]))
-print(col_sums([[-1, 1], [10, -10]]))
-print(col_sums([[0, 0], [0, 0]]))
-print(col_sums([[1, 2], [3]]))
-
-
-        
