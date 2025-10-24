@@ -1,7 +1,3 @@
-# Лабораторная работа 3 — Тексты и частоты слов (словарь/множество)
-
-### Задание A
-```python
 from re import finditer
 
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
@@ -42,10 +38,5 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
         result.append((freq[i][0], freq[i][1]))
 
     return result
-```
-![exA](images/lab03/exA.png)
-
-### Задание B
-```python
-
-```
+    
+    

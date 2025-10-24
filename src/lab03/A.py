@@ -1,7 +1,3 @@
-# Лабораторная работа 3 — Тексты и частоты слов (словарь/множество)
-
-### Задание A
-```python
 from re import finditer
 
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
@@ -37,15 +33,27 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
 
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     freq = sorted(freq.items(), key=lambda item: [-item[1], item[0]])       # список кортежей (ключ, значение) сортируем частоту по убыванию, а слова по возрастанию
-    result = []
+    top_n = []
     for i in range(min(n, len(freq))):
-        result.append((freq[i][0], freq[i][1]))
+        top_n.append((freq[i][0], freq[i][1]))
 
-    return result
-```
-![exA](images/lab03/exA.png)
+    return top_n
+    
+    
 
-### Задание B
-```python
 
-```
+print(normalize("ПрИвЕт\nМИр\t"))
+print(normalize("ёжик, Ёлка"))
+print(normalize("Hello\r\nWorld"))
+print(normalize("  двойные   пробелы  "))
+print()
+
+print(tokenize("привет мир"))
+print(tokenize("hello,world!!!"))
+print(tokenize("по-настоящему круто"))
+print(tokenize("2025 год"))
+print(tokenize("emoji 😀 не слово"))
+print()
+
+print(top_n(count_freq(["a", "b", "a", "c", "b", "a"]), n=2))
+print(top_n(count_freq(["bb", "aa", "bb", "aa", "cc"]), n=2))
