@@ -37,7 +37,7 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
         result.append((freq[i][0], freq[i][1]))
     return result
 ```
-![exA](images/lab03/exA.png)
+![exA](/images/lab03/exA.png)
 
 ### Задание B
 ```python
@@ -61,4 +61,4 @@ def main():
 while True:  # для бесконечного вызова функции
     main()   # вызов функции
 ```
-![exB](images/lab03/exB.png)
+![exB](/images/lab03/exB.png)
