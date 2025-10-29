@@ -17,6 +17,7 @@ def read_text(path: str | Path, encoding: str = "utf-8") -> str:
     return p.read_text(encoding=encoding)
 
 
+
 def write_csv(rows: Iterable[Sequence], path: str | Path, header: tuple[str, ...] | None = None) -> None:
 
     p = Path(path)   # Создаем путь
@@ -38,6 +39,6 @@ def write_csv(rows: Iterable[Sequence], path: str | Path, header: tuple[str, ...
 # функция не возвращает ничего, она записывает данные в CSV файл
 
 
-def write_text(txt: str, path: str | Path, encoding: str = "utf-8") -> str:
+'''def write_text(txt: str, path: str | Path, encoding: str = "utf-8") -> str:
     p = Path(path)   # Создаем путь к файлу - Path-объект
-    return p.write_text(encoding=encoding)
+    return p.write_text(encoding=encoding)'''

@@ -1,5 +1,5 @@
 import sys          # импортируем систему, чтобы применить ввод stdin и добавить путь к папке
-sys.path.append('C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src')        # добавляем путь к папке
+sys.path.append(r'C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src')        # добавляем путь к папке
 from lib.text import normalize, tokenize, count_freq, top_n
 
 def main():

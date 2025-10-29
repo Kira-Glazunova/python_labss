@@ -1,5 +1,5 @@
 import sys   
-sys.path.append('C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src')
+sys.path.append(r'C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src')
 from lib.text import normalize, tokenize, count_freq, top_n
 from lib.io_txt_csv import read_text, write_csv, write_text
 
