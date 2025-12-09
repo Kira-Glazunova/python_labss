@@ -1,6 +1,7 @@
 import argparse
-import sys   
-sys.path.append(r'C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src')
+import sys
+
+sys.path.append(r"C:\Users\kira_\OneDrive\Рабочий стол\python_labss\src")
 
 from pathlib import Path
 from lib.text import normalize, tokenize, count_freq, top_n
@@ -55,7 +56,7 @@ def main():
 
             print(f"Всего уникальных слов: {len(freq)}")
             print(f"Топ-{args.top} самых частых слов:\n")
-            
+
             num = 1
             for word, count in top:
                 print(f"{num}. {word} - {count}")
@@ -63,4 +64,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()
