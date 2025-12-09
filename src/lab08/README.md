@@ -80,7 +80,7 @@ if __name__ == "__main__":
     restored_student = Student.from_dict(student_dict)
     print(f"Десериализованный: {restored_student}")
 ```
-![A](images/lab08/2.png)
+![A](/images/lab08/2.png)
 ### Задание B 
 ``` python
 import json
@@ -133,4 +133,4 @@ stud = [
 students_to_json(stud, "data/out/students.json")
 print(students_from_json("data/samples/students_input.json"))
 ```
-![b](images/lab08/1.png)
+![b](/images/lab08/1.png)

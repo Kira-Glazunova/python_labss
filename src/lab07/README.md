@@ -196,7 +196,7 @@ class TestIntegration:
         assert top == []
 
 ```
-![A](images/lab07/1.png)
+![A](/images/lab07/1.png)
 
 ### Задание B - test_json_csv
 ```python
@@ -503,7 +503,7 @@ Carlos,30,Kazan"""
         assert lines1 == lines2
 
 ```
-![B](images/lab07/2.png)
+![B](/images/lab07/2.png)
 
 ### Задание C - black
-![C](images/lab07/3.png)
+![C](/images/lab07/3.png)
